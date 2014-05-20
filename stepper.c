@@ -44,6 +44,7 @@ step_motor_t step_motor_create(step_mode_t mode, int phase_count, ...)
     foreach(int, idx, phase_count)
     {
         int pin = va_arg(args, int);
+        pinMode(pin, OUTPUT);
         digitalWrite(pin, LOW);
         motor->phases[idx] = pin;
     }
