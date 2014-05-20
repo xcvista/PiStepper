@@ -12,7 +12,7 @@
 #include <sys/cdefs.h>
 #include <pthread.h>
 
-#define foreach(_type, _var, _limit) for (_type _var; _var < _limit; _var++)
+#define foreach(_type, _var, _limit) for (_type _var = 0; _var < _limit; _var++)
 
 typedef struct step_motor *step_motor_t;
 typedef const struct step_mode *step_mode_t;
