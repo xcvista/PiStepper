@@ -20,7 +20,7 @@ step_motor_t step_motor_create(step_mode_t mode, int phase_count, ...)
     
     size_t size =
         sizeof(step_mode_t) +
-        sizeof(pthread_mutex_t *) +
+        sizeof(pthread_mutex_t *) * 2 +
         sizeof(int) * (phase_count + 3);
     step_motor_t motor = malloc(size);
     if (!motor)
