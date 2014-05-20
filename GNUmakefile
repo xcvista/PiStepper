@@ -35,7 +35,7 @@ install: install-library install-headers
 
 install-library: $(TARGET)
 	install -m 755 $(TARGET) $(PREFIX)/lib/$(TARGET).1.0
-	ln -s $(TARGET).1.0 $(PREFIX)/lib/$(TARGET)
+	ln -sf $(TARGET).1.0 $(PREFIX)/lib/$(TARGET)
 
 install-headers: $(HEADERS)
 	install -m 644 $(HEADERS) $(PREFIX)/include/
