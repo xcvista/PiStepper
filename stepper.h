@@ -38,12 +38,12 @@ struct step_motor
     
     int phase_count;
     int phases[];
-};
+} __attribute__((packed));
 
 struct step_mode
 {
     int status_count;
     void (*set_phases)(step_motor_t motor);
-};
+} __attribute__((packed));
 
 #endif
