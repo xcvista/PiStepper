@@ -6,8 +6,30 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1D5C4A53192BD95C00785580 /* stepper.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C4A52192BD95C00785580 /* stepper.c */; };
+		1D5C4A56192BDA2F00785580 /* wiringPi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5C4A55192BDA2F00785580 /* wiringPi.h */; };
+		1D5C4A59192BE28200785580 /* step_half.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C4A58192BE28200785580 /* step_half.c */; };
+		1D5C4A5C192BE82000785580 /* step_full.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C4A5B192BE82000785580 /* step_full.c */; };
+		1D5C4A5E192BE87400785580 /* digitalWrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C4A5D192BE87400785580 /* digitalWrite.c */; };
+		1D5C4A61192BE95700785580 /* step_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C4A60192BE95700785580 /* step_fast.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1D5C4A4B192BD94400785580 /* libPiStepper.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libPiStepper.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5C4A52192BD95C00785580 /* stepper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stepper.c; sourceTree = "<group>"; };
+		1D5C4A54192BD96E00785580 /* stepper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stepper.h; sourceTree = "<group>"; };
+		1D5C4A55192BDA2F00785580 /* wiringPi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wiringPi.h; sourceTree = "<group>"; };
+		1D5C4A57192BE27700785580 /* step_half.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = step_half.h; sourceTree = "<group>"; };
+		1D5C4A58192BE28200785580 /* step_half.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = step_half.c; sourceTree = "<group>"; };
+		1D5C4A5A192BE7FF00785580 /* step_full.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = step_full.h; sourceTree = "<group>"; };
+		1D5C4A5B192BE82000785580 /* step_full.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = step_full.c; sourceTree = "<group>"; };
+		1D5C4A5D192BE87400785580 /* digitalWrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = digitalWrite.c; sourceTree = "<group>"; };
+		1D5C4A5F192BE93000785580 /* step_fast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = step_fast.h; sourceTree = "<group>"; };
+		1D5C4A60192BE95700785580 /* step_fast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = step_fast.c; sourceTree = "<group>"; };
+		1D5C4A62192BE9E500785580 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1D5C4A63192BEA5200785580 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1D5C4A64192BEAA900785580 /* GNUmakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GNUmakefile; sourceTree = "<group>"; usesTabs = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +46,19 @@
 		1D5C4A42192BD94400785580 = {
 			isa = PBXGroup;
 			children = (
+				1D5C4A62192BE9E500785580 /* README.md */,
+				1D5C4A63192BEA5200785580 /* .gitignore */,
+				1D5C4A64192BEAA900785580 /* GNUmakefile */,
+				1D5C4A55192BDA2F00785580 /* wiringPi.h */,
+				1D5C4A5D192BE87400785580 /* digitalWrite.c */,
+				1D5C4A54192BD96E00785580 /* stepper.h */,
+				1D5C4A52192BD95C00785580 /* stepper.c */,
+				1D5C4A57192BE27700785580 /* step_half.h */,
+				1D5C4A58192BE28200785580 /* step_half.c */,
+				1D5C4A5A192BE7FF00785580 /* step_full.h */,
+				1D5C4A5B192BE82000785580 /* step_full.c */,
+				1D5C4A5F192BE93000785580 /* step_fast.h */,
+				1D5C4A60192BE95700785580 /* step_fast.c */,
 				1D5C4A4C192BD94400785580 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +78,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5C4A56192BDA2F00785580 /* wiringPi.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +133,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5C4A5E192BE87400785580 /* digitalWrite.c in Sources */,
+				1D5C4A53192BD95C00785580 /* stepper.c in Sources */,
+				1D5C4A5C192BE82000785580 /* step_full.c in Sources */,
+				1D5C4A59192BE28200785580 /* step_half.c in Sources */,
+				1D5C4A61192BE95700785580 /* step_fast.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
